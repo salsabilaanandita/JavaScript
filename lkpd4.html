@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lkpd</title>
+</head>
+
+<body>
+    <script>
+        let gddmmyyyynn = 22902200835
+        let g = Math.floor(gddmmyyyynn / 1000000000 % 10)
+        let dd = Math.floor(gddmmyyyynn / 100000000 % 100)
+        let mm = Math.floor(gddmmyyyynn / 1000000 % 10)
+        let yyyy = Math.floor(gddmmyyyynn / 100 % 10000)
+        let nn = Math.floor(gddmmyyyynn % 10)
+        switch (mm) {
+            case 1:
+                mm = "Januari" + '</br>'
+                break;
+            case 2:
+                mm = "Februari"
+                break;
+            case 3:
+                mm = "Maret"
+                break;
+            case 4:
+                mm = "April"
+                break;
+            case 5:
+                mm = "Mei"
+                break;
+            case 6:
+                mm = "Juni"
+                break;
+            case 7:
+                mm = "Juli"
+                break;
+            case 8:
+                mm = "Agustus"
+                break;
+            case 9:
+                mm = "September"
+                break;
+            case 10:
+                mm = "Oktober"
+                break;
+            case 11:
+                mm = "November"
+                break;
+            case 12:
+                mm = "Desember"
+                break;
+            default:
+                break;
+        }
+
+        if (g >= 1 && g<= 4) {
+            document.write('g:' + g, '</br>', 'dd:' + dd, '</br>', 'mm:' + mm, '</br>', 'yyyy:' + yyyy, '</br>', 'nn:' + nn, '</br>',)
+        } else {
+            document.write("Identitas tidak valid")
+        }
+
+    </script>
+</body>
+
+</html>

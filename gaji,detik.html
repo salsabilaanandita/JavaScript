@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal</title>
+</head>
+
+<body>
+    <script>
+        let nama = 'salsa'
+        let gajipokok = 5000
+        let tunjangan = 0.2 * gajipokok
+        let pajak = 0.15 * (gajipokok + tunjangan)
+        let gajibersih = (gajipokok + tunjangan - pajak)
+
+        document.write('Nama Karyawan:' + nama + "</br>")
+        document.write('Tunjangan:' + tunjangan + "</br>")
+        document.write('Pajak:' + pajak + "</br>")
+        document.write('Gaji Bersih:' + gajibersih + "</br>")
+
+
+        let detik = 5440;
+        let menit = detik % 3600;
+        let jam = detik % 60;
+        console.log(detik+"detik")
+
+        let jeruk = 1
+        let awal = (jeruk*1000)/100*500;
+        let diskon = 5/100*awal
+        let total = awal - diskon;
+
+        console.log('harga sebelum diskon adalah' + 'Rp' + awal +',','diskonnya adalah' + 'Rp' + total)
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //nomor 4//
+
+        let keyboard= 40000;
+        let mouse= 30000;
+        let earphone= 10000;
+        let persen= (10/100);
+        let total= (keyboard+mouse+earphone);
+
+        if(total >100000){
+            console.log(keyboard+mouse+earphone - persen)
+        }else{
+            console.log(total)
+        }
+
+        //nomor 5//
+
+        let jamlembur= 6;
+
+        if(jamlembur < 6){
+            console.log("Gaji Lembur Rp.100")
+        }else if(jamlembur == 6){
+            console.log("Gaji Lembur Rp.200")
+        }else if(jamlembur > 6){
+            console.log("Gaji Lembur Rp.300")
+        }
+
+        //nomor 6//
+
+        let air= 600;
+
+        if(air <=500.0){
+            console.log("AMAN")
+        }else if( air >=500.1 && air<=600.0 ){
+            console.log("WASPADA")
+        }else if( air >=600.1 && air <=650.0 ){
+            console.log("SIAGA2")
+        }else if( air >550){
+            console.log("SIAGA1")
+        }
+    </script>
+</body>
+</html>
